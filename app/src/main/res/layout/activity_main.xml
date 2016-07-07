@@ -10,8 +10,8 @@
     android:background="#ffffff"
     tools:context="com.citech.vanka.cambridge.MainActivity">
     <ImageView
-        android:layout_width="140sp"
-        android:layout_height="140sp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:id="@+id/imageView"
         android:src="@drawable/citfin"
         android:contentDescription="@string/desc"
