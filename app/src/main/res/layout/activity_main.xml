@@ -55,8 +55,8 @@
             android:id="@+id/imageButton2"
             android:src="@drawable/academic"
             android:background="@android:color/transparent"
-            android:layout_alignTop="@+id/imageButton"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageButton5" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
             android:id="@+id/imageButton3"
             android:src="@drawable/achieve"
             android:background="@android:color/transparent"
-            android:layout_alignTop="@+id/imageButton2"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true" />
 
         <ImageButton
@@ -73,7 +73,7 @@
             android:id="@+id/imageButton4"
             android:src="@drawable/rad"
             android:background="@android:color/transparent"
-            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/imageButton5"
             android:layout_alignParentStart="true" />
 
         <ImageButton
@@ -91,7 +91,7 @@
             android:id="@+id/imageButton6"
             android:src="@drawable/gallery"
             android:background="@android:color/transparent"
-            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/imageButton5"
             android:layout_alignParentEnd="true" />
 
         <ImageButton
@@ -110,7 +110,7 @@
             android:src="@drawable/contact"
             android:background="@android:color/transparent"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignStart="@+id/imageButton5" />
 
         <ImageButton
             android:layout_width="wrap_content"
