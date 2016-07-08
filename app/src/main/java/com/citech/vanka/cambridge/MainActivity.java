@@ -45,15 +45,15 @@ public class MainActivity extends AppCompatActivity {
         });
         achv.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Achievements",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Achieve.class);
+                startActivity(intent);
 
             }
         });
         rad.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "R&D",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Rad.class);
+                startActivity(intent);
 
             }
         });

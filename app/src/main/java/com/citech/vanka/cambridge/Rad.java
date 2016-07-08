@@ -1,0 +1,32 @@
+package com.citech.vanka.cambridge;
+
+import android.content.pm.ActivityInfo;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.webkit.WebView;
+
+public class Rad extends AppCompatActivity {
+    WebView myWebView;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rad);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        myWebView = (WebView)findViewById(R.id.rad);
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.loadUrl("file:///android_asset/www/RandD.html");
+    }
+    @Override
+    public void onBackPressed() {
+
+        if(myWebView.canGoBack())
+        {
+            myWebView.goBack();
+        }
+
+        else {
+            super.onBackPressed();
+        }
+        //additional code
+    }
+}

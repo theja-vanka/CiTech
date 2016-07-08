@@ -51,7 +51,9 @@
         <activity android:name=".Subclass.FacCiv" />
         <activity android:name=".Subclass.FacBas" />
         <activity android:name=".Subclass.FacMca" />
-        <activity android:name=".Subclass.FacMba"></activity>
+        <activity android:name=".Subclass.FacMba" />
+        <activity android:name=".Achieve" />
+        <activity android:name=".Rad"></activity>
     </application>
 
 </manifest>
