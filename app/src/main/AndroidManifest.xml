@@ -36,7 +36,13 @@
         <activity android:name=".Subclass.DeptEee" />
         <activity android:name=".Subclass.DeptIse" />
         <activity android:name=".Subclass.DeptMec" />
-        <activity android:name=".Subclass.DeptCiv"></activity>
+        <activity android:name=".Subclass.DeptCiv" />
+        <activity android:name=".Subclass.DeptPcse" />
+        <activity android:name=".Subclass.DeptPcne" />
+        <activity android:name=".Subclass.DeptPsip" />
+        <activity android:name=".Subclass.DeptPmca" />
+        <activity android:name=".Subclass.DeptPmba" />
+        <activity android:name=".Subclass.DeptPmed"></activity>
     </application>
 
 </manifest>

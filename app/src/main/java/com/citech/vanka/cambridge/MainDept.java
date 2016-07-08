@@ -14,6 +14,12 @@ import com.citech.vanka.cambridge.Subclass.DeptEce;
 import com.citech.vanka.cambridge.Subclass.DeptEee;
 import com.citech.vanka.cambridge.Subclass.DeptIse;
 import com.citech.vanka.cambridge.Subclass.DeptMec;
+import com.citech.vanka.cambridge.Subclass.DeptPcne;
+import com.citech.vanka.cambridge.Subclass.DeptPcse;
+import com.citech.vanka.cambridge.Subclass.DeptPmba;
+import com.citech.vanka.cambridge.Subclass.DeptPmca;
+import com.citech.vanka.cambridge.Subclass.DeptPmed;
+import com.citech.vanka.cambridge.Subclass.DeptPsip;
 
 public class MainDept extends AppCompatActivity {
     private ImageButton dcse,dece,deee,dise,dmec,dciv,dpcs,dpcn,dpsp,dpmc,dpmd,dpmb;
@@ -79,43 +85,43 @@ public class MainDept extends AppCompatActivity {
         });
         dpcs.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "pCSE",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptPcse.class);
+                startActivity(intent);
 
             }
         });
         dpcn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "pcn",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptPcne.class);
+                startActivity(intent);
 
             }
         });
         dpmc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "mca",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptPmca.class);
+                startActivity(intent);
 
             }
         });
         dpsp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "sigpro",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptPsip.class);
+                startActivity(intent);
 
             }
         });
         dpmd.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "machine d",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptPmed.class);
+                startActivity(intent);
 
             }
         });
         dpmb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "mba",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptPmba.class);
+                startActivity(intent);
 
             }
         });
