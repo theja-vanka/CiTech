@@ -3,4 +3,7 @@
     <string name="desc">This is an image</string>
     <string name="colnam">Cambridge Institute of Technology</string>
     <string name="ulin">_________________________________</string>
+    <string name="dpts">Departments</string>
+    <string name="ugp"><u>Undergraduate Programs</u></string>
+    <string name="pgp"><u>Postgraduate Programs</u></string>
 </resources>
