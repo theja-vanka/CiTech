@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainDept" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".MainFac"></activity>
     </application>
 
 </manifest>

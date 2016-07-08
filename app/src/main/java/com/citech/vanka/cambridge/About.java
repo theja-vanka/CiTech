@@ -12,7 +12,13 @@ public class About extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         myWebView = (WebView)findViewById(R.id.about);
         myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl();
+        myWebView.loadUrl("file:///android_asset/about/home.html");
+    }
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+        //additional code
     }
 
 }

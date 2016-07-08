@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         dev = (ImageButton) findViewById(R.id.imageButton9);
         abt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "About Us",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, About.class);
+                startActivity(intent);
 
             }
         });
