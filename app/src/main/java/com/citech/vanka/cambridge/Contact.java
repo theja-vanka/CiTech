@@ -5,16 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 
-public class About extends AppCompatActivity {
+public class Contact extends AppCompatActivity {
     WebView myWebView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_contact);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        myWebView = (WebView)findViewById(R.id.about);
+        myWebView = (WebView)findViewById(R.id.contact);
         myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl("file:///android_asset/about/home.html");
+        myWebView.loadUrl("file:///android_asset/www/Contact_us.html");
     }
     @Override
     public void onBackPressed() {
@@ -22,5 +22,4 @@ public class About extends AppCompatActivity {
         super.onBackPressed();
         //additional code
     }
-
 }

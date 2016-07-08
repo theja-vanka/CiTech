@@ -2,6 +2,7 @@ package com.citech.vanka.cambridge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         abt = (ImageButton) findViewById(R.id.imageButton);
         acap = (ImageButton) findViewById(R.id.imageButton2);
@@ -101,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
         });
         cu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Contact Us",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Contact.class);
+                startActivity(intent);
 
             }
         });

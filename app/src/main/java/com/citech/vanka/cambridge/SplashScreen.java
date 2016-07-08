@@ -3,6 +3,7 @@ package com.citech.vanka.cambridge; /**
  */
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 /**
@@ -15,6 +16,7 @@ public class SplashScreen extends Activity {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         Thread timerThread = new Thread(){
             public void run(){
