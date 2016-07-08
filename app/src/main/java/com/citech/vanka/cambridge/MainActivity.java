@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
         });
         dev.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Developers",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Dev.class);
+                startActivity(intent);
 
             }
         });
