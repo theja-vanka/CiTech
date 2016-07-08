@@ -22,7 +22,7 @@ import com.citech.vanka.cambridge.Subclass.DeptPmed;
 import com.citech.vanka.cambridge.Subclass.DeptPsip;
 
 public class MainDept extends AppCompatActivity {
-    private ImageButton dcse,dece,deee,dise,dmec,dciv,dpcs,dpcn,dpsp,dpmc,dpmd,dpmb;
+    private ImageButton dcse,dece,deee,dise,dmec,dciv,dpcs,dpcn,dpsp,dpmc,dpmd,dpmb,hom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +41,14 @@ public class MainDept extends AppCompatActivity {
         dpmc = (ImageButton) findViewById(R.id.imageButton21);
         dpmd = (ImageButton) findViewById(R.id.imageButton15);
         dpmb = (ImageButton) findViewById(R.id.imageButton14);
+        hom = (ImageButton) findViewById(R.id.homeb);
 
+        hom.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onBackPressed();
+
+            }
+        });
         dcse.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainDept.this, DeptCse.class);
