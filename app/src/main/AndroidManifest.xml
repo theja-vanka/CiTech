@@ -30,7 +30,8 @@
         <activity android:name=".About" />
         <activity android:name=".MainFac" />
         <activity android:name=".Contact" />
-        <activity android:name=".Dev"></activity>
+        <activity android:name=".Dev" />
+        <activity android:name=".Subclass.DeptCse"></activity>
     </application>
 
 </manifest>
