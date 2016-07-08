@@ -42,7 +42,16 @@
         <activity android:name=".Subclass.DeptPsip" />
         <activity android:name=".Subclass.DeptPmca" />
         <activity android:name=".Subclass.DeptPmba" />
-        <activity android:name=".Subclass.DeptPmed"></activity>
+        <activity android:name=".Subclass.DeptPmed" />
+        <activity android:name=".Subclass.FacCse" />
+        <activity android:name=".Subclass.FacEce" />
+        <activity android:name=".Subclass.FacEee" />
+        <activity android:name=".Subclass.FacIse" />
+        <activity android:name=".Subclass.FacMec" />
+        <activity android:name=".Subclass.FacCiv" />
+        <activity android:name=".Subclass.FacBas" />
+        <activity android:name=".Subclass.FacMca" />
+        <activity android:name=".Subclass.FacMba"></activity>
     </application>
 
 </manifest>
