@@ -57,10 +57,8 @@ public class MainActivity extends AppCompatActivity {
         });
         fac.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "FAC",
-                        Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(MainActivity.this, MainFac.class);
-               // startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, MainFac.class);
+                startActivity(intent);
 
             }
         });
