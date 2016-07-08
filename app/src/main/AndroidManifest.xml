@@ -31,7 +31,12 @@
         <activity android:name=".MainFac" />
         <activity android:name=".Contact" />
         <activity android:name=".Dev" />
-        <activity android:name=".Subclass.DeptCse"></activity>
+        <activity android:name=".Subclass.DeptCse" />
+        <activity android:name=".Subclass.DeptEce" />
+        <activity android:name=".Subclass.DeptEee" />
+        <activity android:name=".Subclass.DeptIse" />
+        <activity android:name=".Subclass.DeptMec" />
+        <activity android:name=".Subclass.DeptCiv"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.citech.vanka.cambridge.Subclass.DeptCiv;
 import com.citech.vanka.cambridge.Subclass.DeptCse;
+import com.citech.vanka.cambridge.Subclass.DeptEce;
+import com.citech.vanka.cambridge.Subclass.DeptEee;
+import com.citech.vanka.cambridge.Subclass.DeptIse;
+import com.citech.vanka.cambridge.Subclass.DeptMec;
 
 public class MainDept extends AppCompatActivity {
     private ImageButton dcse,dece,deee,dise,dmec,dciv,dpcs,dpcn,dpsp,dpmc,dpmd,dpmb;
@@ -40,36 +45,35 @@ public class MainDept extends AppCompatActivity {
         });
         deee.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "eeE",
-                        Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(MainDept.this, DeptEee.class);
+                startActivity(intent);
             }
         });
         dece.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "ece",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptEce.class);
+                startActivity(intent);
 
             }
         });
         dise.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "iSE",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptIse.class);
+                startActivity(intent);
 
             }
         });
         dmec.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "mEc",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptMec.class);
+                startActivity(intent);
 
             }
         });
         dciv.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "civ",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainDept.this, DeptCiv.class);
+                startActivity(intent);
 
             }
         });
