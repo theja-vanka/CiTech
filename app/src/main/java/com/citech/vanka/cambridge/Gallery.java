@@ -17,6 +17,7 @@ public class Gallery extends AppCompatActivity {
         myWebView = (WebView)findViewById(R.id.gal);
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new MyWebViewClient());
+       // myWebView.loadUrl("www.google.com");
         myWebView.loadUrl("file:///android_asset/www/gallery_home.html");
     }
     @Override
