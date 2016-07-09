@@ -19,12 +19,14 @@ import com.citech.vanka.cambridge.Subclass.FacMca;
 import com.citech.vanka.cambridge.Subclass.FacMec;
 
 public class MainFac extends AppCompatActivity {
-    private ImageButton fcse,feee,fece,fciv,fmec,fise,fmba,fmca,fbas;
+    private ImageButton fcse,feee,fece,fciv,fmec,fise,fmba,fmca,fbas,fhom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fac);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        fhom = (ImageButton) findViewById(R.id.homef);
+
         fcse = (ImageButton) findViewById(R.id.imageButton25);
         feee = (ImageButton) findViewById(R.id.imageButton27);
         fece = (ImageButton) findViewById(R.id.imageButton26);
@@ -35,6 +37,12 @@ public class MainFac extends AppCompatActivity {
         fmca = (ImageButton) findViewById(R.id.imageButton23);
         fbas = (ImageButton) findViewById(R.id.imageButton22);
 
+        fcse.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onBackPressed();
+
+            }
+        });
         fcse.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainFac.this, FacCse.class);
