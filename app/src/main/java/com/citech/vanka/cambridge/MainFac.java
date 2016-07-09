@@ -37,7 +37,7 @@ public class MainFac extends AppCompatActivity {
         fmca = (ImageButton) findViewById(R.id.imageButton23);
         fbas = (ImageButton) findViewById(R.id.imageButton22);
 
-        fcse.setOnClickListener(new View.OnClickListener() {
+        fhom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 onBackPressed();
 

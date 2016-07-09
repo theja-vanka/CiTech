@@ -44,7 +44,7 @@
         android:background="#ffffff"
         android:id="@+id/imageView2"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/homeb" />
+        android:layout_toEndOf="@+id/homef" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
