@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(), "Gallery",
-                            Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, Gallery.class);
+                    startActivity(intent);
 
                 }
 

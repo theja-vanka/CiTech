@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html>
+
+<head>
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/IMG_5625.jpeg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/IMG_5518.jpeg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/IMG_5572.jpeg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/IMG_5524.jpeg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/IMG_5598.jpeg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/IMG_5756.jpeg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0051.jpg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0091.jpg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0266.jpg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0276.jpg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/RAJ_9970.jpg">
+<link rel="prerender" href="http://citech.edu.in/wp-content/uploads/2016/06/RAJ_9984.jpg">
+  <title>nanoGALLERY</title>
+	<style>
+		* {font-family: sans-serif; color:#fff;} 
+		a, h1, h2, h3, h4, h5 {text-align:center; color:#eee;}
+		body {background:#ffffff;}
+	</style>
+
+  
+  
+  <!-- nanoGALLERY                                                                                                          -->
+  <!-- Plugin for jQuery by Christophe Brisbois                                                                             -->
+  <!-- Demo & doc: http://nanogallery.brisbois.fr                                                                           -->
+  <!-- Sources: https://github.com/Kris-B/nanoGALLERY                                                                       -->
+  <!-- License: For personal, non-profit organizations, or open source projects, you may use nanoGALLERY for free.          -->
+  <!-- -------- ALL OTHER USES REQUIRE THE PURCHASE OF A PROFESSIONAL LICENSE.                                              -->
+
+  
+  <!-- #################################################################################################################### -->
+  <!-- jQuery                                                                                                               -->
+  <!--                                                                                                                      -->
+  <script type="text/javascript" src="third.party/jquery-1.7.1.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  -->
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  -->
+  <!-- #################################################################################################################### -->
+
+
+  <!-- #################################################################################################################### -->
+  <!-- nanoGALLERY CSS files                                                                                                -->
+  <!-- only include the css file corresponding to the selected theme                                                        -->
+  <!-- include 'nanogallery.css' if no theme is specified                                                                   -->
+  <!--                                                                                                                      -->
+	<!-- nanoGALLERY - default theme css file                                                                                 -->
+	<link href="css/nanogallery.css" rel="stylesheet" type="text/css">
+	<!-- nanoGALLERY - css file for the theme 'clean'                                                                         -->
+	<link href="css/themes/clean/nanogallery_clean.css" rel="stylesheet" type="text/css">
+	<!-- nanoGALLERY - css file for the theme 'light'                                                                         -->
+	<link href="css/themes/light/nanogallery_light.css" rel="stylesheet" type="text/css">
+  <!-- #################################################################################################################### -->
+
+  <!-- #################################################################################################################### -->
+	<!-- nanoGALLERY javascript                                                                                               -->
+  <!--                                                                                                                      -->
+	<script type="text/javascript" src="jquery.nanogallery.js"></script>
+  <!--                                                                                                                      -->
+  <!-- #################################################################################################################### -->
+
+  <!-- #################################################################################################################### -->
+  <!-- transit.js animation engine - Optionnal                                                                              -->
+  <!-- This plugin is used alternatively for all animations (hover effects et image display animations)                     -->
+  <!-- warning: not compatible with IE9-                                                                                    -->
+  <!--                                                                                                                      -->
+  <!--
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js">
+  </script>                                 
+  -->
+  <!-- #################################################################################################################### -->
+
+  
+  <!-- #################################################################################################################### -->
+  <!-- fancyBox - Optionnal                                                                                                 -->
+  <!--                                                                                                                      -->
+  <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" /> -->
+  <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js?v=2.1.5"></script>  -->
+  <!-- #################################################################################################################### -->
+
+
+  <!-- #################################################################################################################### -->
+  <!-- velocity animation engine - optionnal - JUST FOR TEST PURPOSES / PLEASE DO NOT USE!!!                                -->
+  <!--                                                                                                                      -->
+  <!-- <script type="text/javascript" src="third.party/velocity/jquery.velocity.min.js"></script>                           -->
+	<!-- <script type="text/javascript" src="http://julian.com/research/velocity/build/jquery.velocity.min.js"></script>      -->
+  <!-- #################################################################################################################### -->
+
+  
+	<script>
+		$(document).ready(function () {
+    
+      // ##################################################################################################################
+      // ##### Sample1 - API method #####
+      // ##################################################################################################################
+			var myColorScheme = {
+				navigationbar : {
+					background : '#000',
+					border : '0px dotted #555',
+					color : '#ccc',
+					colorHover:'#fff'
+				},
+				thumbnail : {
+					background:'#000',
+					border:'1px solid #000',
+					labelBackground:'transparent',
+					labelOpacity:'0.8',
+					titleColor:'#fff',
+					descriptionColor:'#eee'
+				}
+			};
+			var myColorSchemeViewer = {
+				background:'rgba(1, 1, 1, 0.75)',
+				imageBorder:'12px solid #f8f8f8',
+				imageBoxShadow:'#888 0px 0px 20px',
+				barBackground:'#222',
+				barBorder:'2px solid #111',
+				barColor:'#eee',
+				barDescriptionColor:'#aaa'
+			};
+
+      // custom thumbnail hover effect
+      function myThumbnailInit($elt, item) {
+      }
+      function myThumbnailHoverInit($elt, item, data) {
+        //$elt.find('.labelDescription').css({'opacity':'0'});
+
+        var $subCon=$elt.find('.subcontainer');
+        var th=$elt.outerHeight(true);
+        var $iC=$elt.find('.imgContainer');
+        var w=$iC.outerWidth(true)/10;
+        var h=$iC.outerHeight(true);
+        for(var c=0; c<10; c++ ) {
+          var s='rect(0px, '+w*(c+1)+'px, '+h+'px, '+w*c+'px)';
+          //var $t=$lI.clone().appendTo($subCon).css({'bottom':-(h+c*4), 'clip':s});
+          $iC.clone().appendTo($elt.find('.subcontainer')).css({'bottom':0, 'scale':1, 'clip':s, 'left':0, 'position':'absolute'});
+          //$t.css({'top':c*2});
+        }
+        $iC.remove();
+      }
+      
+      function myThumbnailHover($elt, item, data) {
+        //$elt.find('.labelDescription').delay(150)[data.animationEngine]({'opacity':'1'},400);
+        //$elt.find('.labelDescription').delay(150).animate({'opacity':'1'},400);
+        var w=$elt.find('.imgContainer').outerWidth(true)/10;
+        $elt.find('.imgContainer').each(function( index ) {
+          $(this)[data.animationEngine]({ 'left':(-w*10)+w*index*3, 'scale':2},20000);
+          //console.log( index*w + ' ' + index+ '-'+w );
+        });
+      }
+      function myThumbnailHoverOut($elt, item, data) {
+        //$elt.find('.labelDescription').animate({'opacity':'0'},300);
+        var h=$elt.find('.labelImage').outerHeight(true);
+        var w=$elt.find('.labelImage').outerWidth(true)/10;
+        $elt.find('.labelImage').each(function( index ) {
+          $(this)[data.animationEngine]({'bottom':-(h+index*4)});
+        });
+      }
+      
+      // custom info button on viewer toolbar
+      function myViewerInfo(item, data) {
+        alert('Image URL: '+ item.thumbsrc);
+      }
+
+			jQuery("#nanoGallery1").nanoGallery({thumbnailWidth:150,thumbnailHeight:150,
+			items: [
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5625.jpeg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5625.jpeg',
+					title: 'image 1'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5518.jpeg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5518.jpeg',
+					title: 'image 2'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5572.jpeg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5572.jpeg',
+					title: 'image 3'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5524.jpeg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5524.jpeg',
+					title: 'image 4'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5598.jpeg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5598.jpeg',
+					title: 'image 5'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5756.jpeg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/IMG_5756.jpeg',
+					title: 'image 6'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0051.jpg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0051.jpg',
+					title: 'image 7'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0091.jpg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0091.jpg',
+					title: 'image 8'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0266.jpg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0266.jpg',
+					title: 'image 9'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0276.jpg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_0276.jpg',
+					title: 'image 10'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_9970.jpg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_9970.jpg',
+					title: 'image 11'
+				},
+				{
+					src: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_9984.jpg',
+					srct: 'http://citech.edu.in/wp-content/uploads/2016/06/RAJ_9984.jpg',
+					title: 'image 12'
+				}
+				
+				],
+				thumbnailHoverEffect:[{name:'imageScaleIn80'},{'name':'descriptionAppear','delay':300},{'name':'borderDarker'}],				
+				thumbnailLabel:{display:false,position:'overImageOnBottom'},
+        viewerDisplayLogo:false,
+        //thumbnailInit:myThumbnailInit,
+        //fnThumbnailHoverInit:myThumbnailHoverInit,
+        //fnThumbnailHover:myThumbnailHover,
+        //fnThumbnailHoverOut:myThumbnailHoverOut,
+        theme:'clean',
+        imageTransition: 'fade' ,
+        fnViewerInfo:myViewerInfo,
+        locationHash: false,
+        viewerToolbar: { standard:'minimizeButton , previousButton, pageCounter ,nextButton,playPauseButton,fullscreenButton,infoButton,linkOriginalButton,closeButton,label,custom1' },
+        
+        
+        fnImgToolbarCustClick: function(elementName, $element, item, data) {
+          alert(elementName);
+        },
+        viewer:'fancybox',
+        debugMode:true
+			});
+      
+		});
+
+			
+	</script>
+
+</head>
+
+<!-- <body style="background-color:#fff;"> -->
+<body>
+
+	
+	<div id="nanoGallery1"></div>
+	<br>
+	<div style="background:#eee;padding:'10px';margin:auto;max-width:450px;">
+		
+	</div>
+
+	
+	
+	</body>
+</html>

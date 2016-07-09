@@ -53,7 +53,7 @@
         <activity android:name=".Subclass.FacMca" />
         <activity android:name=".Subclass.FacMba" />
         <activity android:name=".Achieve" />
-        <activity android:name=".Rad"></activity>
+        <activity android:name=".Rad" />
+        <activity android:name=".Gallery"></activity>
     </application>
-
 </manifest>
